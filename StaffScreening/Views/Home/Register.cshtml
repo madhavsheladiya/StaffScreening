@@ -1,0 +1,22 @@
+﻿@model StaffScreening.Models.User
+
+<div class="register-container">
+    <form asp-action="Register" method="post" class="register-form">
+        <h2>Register</h2>
+        <br />
+        <div class="form-field">
+            <input asp-for="Email" placeholder="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-field">
+            <input asp-for="Password" type="password" placeholder="Password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-field">
+            <button type="submit" class="register-button">Register</button>
+        </div>
+        <p class="Login">
+            Wants to Login? <a asp-controller="Home" asp-action="Login">Login</a>.
+        </p>
+    </form>
+</div>

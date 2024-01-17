@@ -1,0 +1,23 @@
+﻿@model StaffScreening.ViewModel.LoginViewModel
+
+<div class="main-content">
+    <div class="login-box">
+        <h2>Login</h2>
+        <br />
+        <form asp-action="Login" method="post">
+            <div class="form-group">
+                <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <br /><br />
+            <p class="register-link">
+                If you are not registered, please <a asp-controller="Home" asp-action="Register">register here</a>.
+            </p>
+        </form>
+    </div>
+</div>

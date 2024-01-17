@@ -1,0 +1,33 @@
+﻿@model ScreeningQuestionnaire
+
+<div class="questionnaire-container">
+    <h2>Screening Questionnaire</h2>
+    <br/>
+    @using (Html.BeginForm("Questionnaire", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <p>1. Do you have a fever of 37.8° or greater?</p>
+            <label><input type="radio" name="Question1" value="true" /> Yes</label>
+            <label><input type="radio" name="Question1" value="false" /> No</label>
+            @Html.ValidationMessageFor(model => model.Question1)
+        </div>
+        <br />
+        <div class="form-group">
+            <p>2. Do you have a runny nose?</p>
+            <label><input type="radio" name="Question2" value="true" /> Yes</label>
+            <label><input type="radio" name="Question2" value="false" /> No</label>
+            @Html.ValidationMessageFor(model => model.Question2)
+        </div>
+        <br />
+        <div class="form-group">
+            <p>3. Do you have a sore throat?</p>
+            <label><input type="radio" name="Question3" value="true" /> Yes</label>
+            <label><input type="radio" name="Question3" value="false" /> No</label>
+            @Html.ValidationMessageFor(model => model.Question3)
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+    }
+</div>

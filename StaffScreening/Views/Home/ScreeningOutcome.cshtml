@@ -1,0 +1,11 @@
+﻿@model ScreeningOutcomeViewModel
+
+<div class="screening-outcome">
+    <h2 class="@(Model.Passed ? "pass" : "fail")">Screening @(Model.Passed ? "Pass" : "Fail")</h2>
+    <p class="@(Model.Passed ? "pass" : "fail")">You have @(Model.Passed ? "passed" : "failed") the screening.</p>
+    <form asp-controller="Home" asp-action="Logout" method="post" class="logout-form">
+        <a href="#" onclick="document.querySelector('.logout-form').submit();" class="logout-link">Logout</a>
+    </form>
+
+</div>
+
