@@ -50,10 +50,10 @@ The application relies on various NuGet packages, outlined in the tables below:
 | MSTest.TestAdapter              | 2.2.8   |
 | MSTest.TestFramework            | 2.2.8   |
 
-Running the Application
-1.Clone the repository to your local machine.
-2.Open the solution in Visual Studio.
-3.Restore the NuGet packages.
-4.Run the StaffScreeningScript to set up the database.
-5.Ensure the SQL Server instance is running and accessible.
-6.Build and run the application.
+###Running the Application
+1. Clone the repository to your local machine.
+2. Open the solution in Visual Studio.
+3. Restore the NuGet packages.
+4. Run the StaffScreeningScript to set up the database.
+5. Ensure the SQL Server instance is running and accessible.
+6. Build and run the application.
